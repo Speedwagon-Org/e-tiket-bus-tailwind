@@ -53,6 +53,10 @@
   background-color: yellow;
 }
 
+.max-w-custom {
+  max-width: 16rem;
+}
+
 @media (min-width: 1024px) {
   .lg\:px-faq {
     padding-left: 30rem;

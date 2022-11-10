@@ -16,10 +16,12 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
+import Profile from "./pages/Profile";
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
+  { name: "Profile", to: "/profile" },
 ];
 
 function App() {
@@ -64,7 +66,6 @@ function App() {
                           <span className="sr-only">View notifications</span>
                           <BellIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
-
                         {/* Profile dropdown */}
                         <Menu as="div" className="relative ml-3">
                           <Transition
@@ -98,7 +99,6 @@ function App() {
                     </div>
                   </div>
                 </div>
-
                 <Disclosure.Panel className="md:hidden">
                   <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                     {navigation.map((item) => (
@@ -142,6 +142,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>

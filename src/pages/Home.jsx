@@ -79,16 +79,16 @@ export default function Home() {
             <div class="flex gap-4 overflow-x-auto pb-2">
               {listbus.map((item) => (
                 <div className="relative mt-5 flex flex-shrink-0">
-                  <div class="max-h-fit max-w-xs rounded-lg bg-gray-800 shadow-md">
-                    <div className="absolute top-0 right-0 rounded-bl-lg rounded-tr-lg bg-pink-500 px-4 py-2">
+                  <div class="max-h-fit lg:max-w-xs max-w-custom rounded-lg bg-gray-800 shadow-md">
+                    <div className="absolute top-0 right-0 rounded-bl-lg rounded-tr-lg bg-green-700 px-4 py-2">
                       <div className="flex text-sm font-bold tracking-wide text-white">
-                        <MapPinIcon width="16" value="asd" />
+                        <MapPinIcon width="16" />
                         <p className="ml-1">{item.maps}</p>
                       </div>
                     </div>
                     <img className="rounded-t-lg" src={item.imgsrc} alt="123" />
                     <div class="p-5">
-                      <h5 class="tracking-tigh mb-2 text-xl font-bold tracking-wide text-white">
+                      <h5 class="tracking-tigh mb-2 text-lg font-bold tracking-wide text-white">
                         {item.name}
                       </h5>
                       <p class="font-normal text-gray-300">
