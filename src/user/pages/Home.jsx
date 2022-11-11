@@ -4,12 +4,12 @@ import { MapPinIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
 /* import img */
-import Img01 from "../assets/images/01.jpg";
-import Img02 from "../assets/images/02.jpg";
-import Img03 from "../assets/images/03.jpg";
+import Img01 from "../../assets/images/01.jpg";
+import Img02 from "../../assets/images/02.jpg";
+import Img03 from "../../assets/images/03.jpg";
 
-import { listbus } from "../data/listbus";
-import { listfaq } from "../data/listfaq";
+import { listbus } from "../../data/listbus";
+import { listfaq } from "../../data/listfaq";
 
 export default function Home() {
   return (

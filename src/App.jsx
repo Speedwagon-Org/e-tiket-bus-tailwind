@@ -13,11 +13,15 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import PageNotFound from "./pages/PageNotFound";
-import Profile from "./pages/Profile";
-
+import Home from "./user/pages/Home";
+import About from "./user/pages/About";
+import PageNotFound from "./user/pages/PageNotFound";
+import Profile from "./user/pages/Profile";
+import Dashboard from "./admin/pages/Dashboard";
+import Bus from "./admin/pages/Bus";
+import Laporan from "./admin/pages/Laporan";
+import RiwayatTiket from "./admin/pages/RiwayatTiket";
+import User from "./admin/pages/User";
 const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
@@ -144,6 +148,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="admin">
+            <Route path="dashboard" element={<Dashboard/>}/>
+            <Route path="bus" element={<Bus/>}/>
+            <Route path="user" element={<User/>}/>
+            <Route path="riwayat-tiket" element={<RiwayatTiket/>}/>
+            <Route path="laporan" element={<Laporan/>}/>
+          </Route>
         </Routes>
       </Router>
 
