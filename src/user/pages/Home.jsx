@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { listbus } from "../../data/listbus";
 import { listvoucher } from "../../data/listvoucher";
 
+/*import component*/
+import AdvanceSearch from "../../components/AdvanceSearch";
+
 export default function Home() {
   return (
     <>
@@ -17,7 +20,7 @@ export default function Home() {
             <span className="text-3xl font-bold text-white">
               mau ke mana hari ini?
             </span>
-            <h1>form search</h1>
+            <AdvanceSearch />
           </div>
         </div>
         {/* Loket bus terdekat */}
