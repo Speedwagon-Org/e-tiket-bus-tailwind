@@ -9,14 +9,14 @@ import {
   NavLink,
 } from "react-router-dom";
 
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import Home from "./user/pages/Home";
-import About from "./user/pages/About";
+import PesanTiket from "./user/pages/PesanTiket";
+import Bantuan from "./user/pages/Bantuan";
+import Login from "./user/pages/LoginRegis";
 import PageNotFound from "./user/pages/PageNotFound";
-import Profile from "./user/pages/Profile";
 import Dashboard from "./admin/pages/Dashboard";
 import Bus from "./admin/pages/Bus";
 import Laporan from "./admin/pages/Laporan";
@@ -24,8 +24,9 @@ import RiwayatTiket from "./admin/pages/RiwayatTiket";
 import User from "./admin/pages/User";
 const navigation = [
   { name: "Home", to: "/" },
-  { name: "About", to: "/about" },
-  { name: "Profile", to: "/profile" },
+  { name: "Pesan Tiket", to: "/pesan-tiket" },
+  { name: "Bantuan", to: "/bantuan" },
+  { name: "Login", to: "/login" },
 ];
 
 function App() {
@@ -33,60 +34,45 @@ function App() {
     <>
       <Router>
         <div className="sticky top-0 z-50 min-h-full">
-          <Disclosure as="nav" className="bg-sky-700">
+          <Disclosure as="nav" className="bg-white">
             {({ open }) => (
               <>
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="px-4 sm:px-6 lg:px-20">
                   <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
-                        {/* <NavLink to="/">
-                          <img className="h-9" src={Logo} alt="Your Company" />
-                        </NavLink> */}
-                      </div>
-                      <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-4">
-                          {navigation.map((item) => (
-                            <NavLink
-                              key={item.name}
-                              to={item.to}
-                              className={({ isActive }) =>
-                                isActive ? "menu-active" : "menu-inactive"
-                              }
-                              end
-                            >
-                              {item.name}
-                            </NavLink>
-                          ))}
-                        </div>
+                        <NavLink to="/">
+                          <img
+                            className="h-9"
+                            src={require("./assets/images/logo.png")}
+                            alt="Buzz"
+                          />
+                        </NavLink>
                       </div>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-4 flex items-center md:ml-6">
-                        <button
-                          type="button"
-                          className="rounded-full bg-sky-700 p-1 text-sky-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-800 hover:text-white"
-                        >
-                          <span className="sr-only">View notifications</span>
-                          <BellIcon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-                        {/* Profile dropdown */}
-                        <Menu as="div" className="relative ml-3">
-                          <Transition
-                            as={Fragment}
-                            enter="transition ease-out duration-100"
-                            enterFrom="transform opacity-0 scale-95"
-                            enterTo="transform opacity-100 scale-100"
-                            leave="transition ease-in duration-75"
-                            leaveFrom="transform opacity-100 scale-100"
-                            leaveTo="transform opacity-0 scale-95"
-                          ></Transition>
-                        </Menu>
+                        <div className="hidden md:block">
+                          <div className="ml-10 flex items-baseline space-x-6">
+                            {navigation.map((item) => (
+                              <NavLink
+                                key={item.name}
+                                to={item.to}
+                                className={({ isActive }) =>
+                                  isActive ? "menu-active" : "menu-inactive"
+                                }
+                                end
+                              >
+                                {item.name}
+                              </NavLink>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="-mr-2 flex md:hidden">
                       {/* Mobile menu button */}
-                      <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-sky-800 p-2 text-sky-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-800 hover:bg-sky-700 hover:text-white">
+                      <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-sky-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-800 hover:bg-sky-700 hover:text-white">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XMarkIcon
@@ -145,23 +131,22 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/pesan-tiket" element={<PesanTiket />} />
+          <Route path="/bantuan" element={<Bantuan />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="admin">
-            <Route path="dashboard" element={<Dashboard/>}/>
-            <Route path="bus" element={<Bus/>}/>
-            <Route path="user" element={<User/>}/>
-            <Route path="riwayat-tiket" element={<RiwayatTiket/>}/>
-            <Route path="laporan" element={<Laporan/>}/>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="bus" element={<Bus />} />
+            <Route path="user" element={<User />} />
+            <Route path="riwayat-tiket" element={<RiwayatTiket />} />
+            <Route path="laporan" element={<Laporan />} />
           </Route>
         </Routes>
       </Router>
 
-      <footer class="p-4 shadow bg-sky-700 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-white sm:text-center">
-          © 2022 Woitaku . All Rights Reserved.
-        </span>
+      <footer class="grid grid-cols-4 p-4 shadow bg-sky-700 md:flex md:items-center md:justify-between">
+        <div>123</div>
       </footer>
     </>
   );

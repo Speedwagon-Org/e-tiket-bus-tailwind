@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 @layer utilities {
   /* width */
@@ -10,7 +11,7 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @apply bg-white;
+    @apply bg-black;
   }
 
   /* Handle */
@@ -21,17 +22,17 @@
 
 @layer components {
   .menu-active {
-    @apply rounded-md bg-sky-800 px-4 py-2 text-sm font-medium text-white;
+    @apply block rounded-md bg-sky-800 px-4 py-2 text-sm font-medium text-white;
   }
   .menu-inactive {
-    @apply rounded-md px-4 py-2 text-sm font-medium text-gray-300 hover:bg-sky-800 hover:text-white;
+    @apply block rounded-md px-2 py-2 text-sm font-medium text-stone-900 hover:bg-sky-300;
   }
   .menu-m-active {
-    @apply block rounded-md bg-sky-800 px-4 py-2 text-base font-medium text-white;
+    @apply block rounded-md bg-sky-800 px-4 py-2 text-sm font-medium text-white;
   }
 
   .menu-m-inactive {
-    @apply block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white;
+    @apply block rounded-md px-2 py-2 text-sm font-medium text-stone-900 hover:bg-sky-300;
   }
   .absolute-center {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform;
@@ -53,8 +54,12 @@
   background-color: yellow;
 }
 
-.max-w-custom {
-  max-width: 16rem;
+.max-w-mobile {
+  max-width: 12rem;
+}
+
+.h-hero {
+  height: 31.25rem;
 }
 
 @media (min-width: 1024px) {
