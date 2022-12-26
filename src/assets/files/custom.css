@@ -62,6 +62,10 @@
   height: 31.25rem;
 }
 
+.p-datepicker {
+  padding: 0px 0px;
+}
+
 @media (min-width: 1024px) {
   .lg\:px-faq {
     padding-left: 30rem;

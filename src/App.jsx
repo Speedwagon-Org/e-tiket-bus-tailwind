@@ -98,7 +98,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <Disclosure.Panel className="md:hidden">
+                <Disclosure.Panel className="md:hidden pb-4">
                   <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                     {navigation.map((item) => (
                       <NavLink
@@ -113,17 +113,6 @@ function App() {
                         {item.name}
                       </NavLink>
                     ))}
-                  </div>
-                  <div className="border-t border-sky-700 pt-4 pb-3">
-                    <div className="flex items-center px-5">
-                      <button
-                        type="button"
-                        className="ml-auto flex-shrink-0 rounded-full bg-sky-800 p-1 text-sky-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-800 hover:text-white"
-                      >
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
-                      </button>
-                    </div>
                   </div>
                 </Disclosure.Panel>
               </>

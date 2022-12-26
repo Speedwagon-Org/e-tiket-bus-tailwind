@@ -15,14 +15,16 @@ export default function Home() {
       <section>
         {/* Hero */}
         <div className="bg-hero bg-cover h-hero">
-          <div className="text-center pt-40">
-            <span className="text-3xl font-semibold text-white">Hei, </span>
-            <span className="text-3xl font-bold text-white">
+          <div className="text-center pt-40 lg:pt-52">
+            <span className="text-3xl font-semibold text-white drop-shadow-xl border-b-2">
+              Hei,{" "}
+            </span>
+            <span className="text-3xl font-bold text-white drop-shadow-xl border-b-2">
               mau ke mana hari ini?
             </span>
-            <AdvanceSearch />
           </div>
         </div>
+        <AdvanceSearch />
         {/* Loket bus terdekat */}
         <div className="p-6 lg:px-20 lg:py-10 grid">
           <h1 className="text-xl lg:text-2xl font-bold">
