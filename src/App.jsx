@@ -23,6 +23,7 @@ import Home from "./user/pages/Home";
 import PesanTiket from "./user/pages/PesanTiket";
 import Bantuan from "./user/pages/Bantuan";
 import Login from "./user/pages/LoginRegis";
+import Blog from "./user/pages/Blog";
 import PageNotFound from "./user/pages/PageNotFound";
 import Dashboard from "./admin/pages/Dashboard";
 import Bus from "./admin/pages/Bus";
@@ -33,6 +34,7 @@ const navigation = [
   { name: "Home", to: "/" },
   { name: "Pesan Tiket", to: "/pesan-tiket" },
   { name: "Bantuan", to: "/bantuan" },
+  { name: "Blog", to: "/blog" },
   { name: "Login", to: "/login" },
 ];
 
@@ -140,6 +142,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pesan-tiket" element={<PesanTiket />} />
           <Route path="/bantuan" element={<Bantuan />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="admin">
