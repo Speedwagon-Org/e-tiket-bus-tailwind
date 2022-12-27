@@ -14,13 +14,13 @@ const AdvanceSearch = () => {
 
   return (
     <div className="lg:px-20 p-6 grid place-items-center -mt-52 lg:-mt-40">
-      <div className="bg-white p-6 rounded-lg shadow-lg border-b-2">
-        <h2 className="font-semibold text-lg lg:text-left text-center mx-2">
+      <div className="bg-white p-6 rounded-lg shadow-lg border-1">
+        <h2 className="font-semibold text-lg lg:text-left text-center">
           Temukan tiket bus murah hanya di Buzz!
         </h2>
         {/* Form */}
-        <div className="flex flex-wrap lg:flex-shrink-0">
-          <div className="relative mx-2 w-full lg:w-56 mt-4">
+        <div className="flex flex-wrap lg:flex-shrink-0 gap-0 lg:gap-4">
+          <div className="relative w-full lg:w-56 mt-4">
             <input
               type="text"
               id="kota_asal"
@@ -34,7 +34,7 @@ const AdvanceSearch = () => {
               Kota Asal
             </label>
           </div>
-          <div className="relative mx-2 w-full lg:w-56 mt-4">
+          <div className="relative w-full lg:w-56 mt-4">
             <input
               type="text"
               id="kota_tujuan"
@@ -48,7 +48,7 @@ const AdvanceSearch = () => {
               Kota Tujuan
             </label>
           </div>
-          <div className="relative mx-2 w-full lg:w-56 mt-4">
+          <div className="relative w-full lg:w-56 mt-4">
             <input
               type="text"
               id="jumlah_tiket"
@@ -62,7 +62,7 @@ const AdvanceSearch = () => {
               Jumlah Tiket
             </label>
           </div>
-          <div className="relative mx-2 w-full lg:w-56 mt-4">
+          <div className="relative w-full lg:w-56 mt-4">
             <Datepicker
               useRange={false}
               asSingle={true}
@@ -78,7 +78,7 @@ const AdvanceSearch = () => {
             </label>
           </div>
         </div>
-        <button className="btn bg-sky-800 px-4 py-2 text-white rounded-md mt-4 float-right mx-2">
+        <button className="btn bg-sky-800 px-4 py-2 text-white rounded-md mt-4 float-right">
           cari tiket
         </button>
       </div>

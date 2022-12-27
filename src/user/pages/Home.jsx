@@ -27,12 +27,9 @@ export default function Home() {
         {/* Hero */}
         <div className="bg-hero bg-cover h-hero">
           <div className="text-center pt-40 lg:pt-52">
-            <span className="text-3xl font-semibold text-white drop-shadow-xl border-b-2">
-              Hei,{" "}
-            </span>
-            <span className="text-3xl font-bold text-white drop-shadow-xl border-b-2">
-              mau ke mana hari ini?
-            </span>
+            <p className="text-3xl font-semibold text-white drop-shadow-xl">
+              Hei, <span className="font-bold">mau ke mana hari ini?</span>
+            </p>
           </div>
         </div>
         {/* Call components AdvanceSearch */}
