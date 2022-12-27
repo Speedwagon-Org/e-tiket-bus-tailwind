@@ -6,7 +6,7 @@ import {
   RocketLaunchIcon,
   ChatBubbleLeftRightIcon,
   CurrencyDollarIcon,
-} from "@heroicons/react/20/solid";
+} from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 /* import data */
