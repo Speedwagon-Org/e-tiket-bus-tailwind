@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/src/assets/images/n01.jpg')",
+        halamantiket: "url('/src/assets/images/header-halaman-tiket.jpg')",
         voc: "url('/src/assets/images/bg-voc.jpg')",
       },
     },
