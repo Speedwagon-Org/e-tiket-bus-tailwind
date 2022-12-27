@@ -70,4 +70,7 @@
     padding-left: 30rem;
     padding-right: 30rem;
   }
+  .lg\:w-accordion {
+    width: 40rem !important;
+  }
 }

@@ -15,6 +15,10 @@ import { listvoucher } from "../../data/listvoucher";
 
 /*import component*/
 import AdvanceSearch from "../../components/AdvanceSearch";
+import Faq from "../../components/Faq";
+
+/* import assets */
+import img_faq from "../../assets/images/img_faq.svg";
 
 export default function Home() {
   return (
@@ -185,7 +189,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* FAQ */}
+        {/* Info promo voucher */}
+        <div className="p-6 lg:px-40 lg:py-10 flex flex-col lg:flex-row lg:items-center">
+          <div>
+            <img src={img_faq} className="w-full lg:w-4/5" alt="img faq" />
+          </div>
+          <div>
+            <h2 className="text-xl lg:text-2xl font-bold mt-5">
+              Butuh bantuan?
+            </h2>
+            <p className="text-sm text-gray-500">
+              beberapa jawaban yang mungkin dapat membantu kamu
+            </p>
+            <Faq />
+          </div>
+        </div>
       </section>
     </>
   );
