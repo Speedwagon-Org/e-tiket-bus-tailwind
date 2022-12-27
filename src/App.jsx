@@ -12,7 +12,6 @@ import {
 import { Disclosure } from "@headlessui/react";
 import {
   Bars3Icon,
-  BellIcon,
   XMarkIcon,
   PhoneIcon,
   EnvelopeIcon,

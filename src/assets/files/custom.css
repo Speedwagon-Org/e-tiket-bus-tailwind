@@ -11,7 +11,6 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @apply bg-black;
   }
 
   /* Handle */
@@ -54,8 +53,8 @@
   background-color: yellow;
 }
 
-.max-w-mobile {
-  max-width: 12rem;
+.max-w-card {
+  max-width: 16rem;
 }
 
 .h-hero {
