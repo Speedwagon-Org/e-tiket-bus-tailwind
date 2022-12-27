@@ -38,17 +38,16 @@ export default class Bantuan extends Component {
                 </p>
               </div>
             </div>
-            <div className="basis-2/3 mt-5">
+            <div className="basis-2/3 mt-5 lg:ml-20">
               <iframe
                 title="maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.999810730559!2d98.68855175029826!3d3.587517297376543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131b05672220d%3A0xba277a5eddb19abe!2sUniversitas%20Mikroskil%2C%20Kampus%20B!5e0!3m2!1sid!2sid!4v1672162220939!5m2!1sid!2sid"
-                width="700"
                 height="350"
                 frameborder="0"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-                className="float-right border-2 rounded-lg"
+                className="float-right border-2 rounded-lg w-full"
               />
             </div>
           </div>
@@ -60,7 +59,7 @@ export default class Bantuan extends Component {
               Hubungi kami untuk menyelesaikan masalah dengan lebih cepat
             </p>
             <div className="grid justify-items-center">
-              <div className="w-2/4">
+              <div className="w-full lg:w-2/4">
                 <div className="relative w-full mt-4">
                   <input
                     type="text"
