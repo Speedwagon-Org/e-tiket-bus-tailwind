@@ -186,10 +186,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Info promo voucher */}
-        <div className="p-6 lg:px-40 lg:py-10 flex flex-col lg:flex-row lg:items-center">
-          <div>
-            <img src={img_faq} className="w-full lg:w-4/5" alt="img faq" />
+        {/* Butuh bantuan - FAQ */}
+        <div className="p-6 lg:px-40 lg:py-10 grid grid-cols-1 lg:grid-cols-2 place-content-center">
+          <div className="grid">
+            <img
+              src={img_faq}
+              className="w-3/4 place-self-center"
+              alt="img faq"
+            />
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold mt-5">
