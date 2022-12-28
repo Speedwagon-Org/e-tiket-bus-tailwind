@@ -120,7 +120,7 @@ export default function Home() {
         {/* Bagian */}
         <div className="bg-sky-800">
           {/* CTA */}
-          <div className="m-6 lg:mx-20 lg:my-10 grid">
+          <div className="p-6 lg:px-20 lg:py-10 grid">
             <div className="max-w-sm justify-self-center text-center">
               <h2 className="text-xl lg:text-2xl font-bold text-white">
                 Dapatkan banyak promo yang menarik dari kami!
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           {/* Keunggulan */}
-          <div className="m-6 lg:mx-20 lg:my-10 grid">
+          <div className="p-6 lg:px-20 lg:py-10 grid">
             <div className="justify-self-center text-center">
               <h2 className="text-xl lg:text-2xl font-bold text-white">
                 Keuntungan bergabung dengan kami!
