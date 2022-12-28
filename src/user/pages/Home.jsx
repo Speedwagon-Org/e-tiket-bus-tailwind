@@ -35,7 +35,7 @@ export default function Home() {
         {/* Call components AdvanceSearch */}
         <AdvanceSearch />
         {/* Loket bus terdekat */}
-        <div className="p-6 lg:px-20 lg:py-10 grid">
+        <div className="m-6 lg:mx-20 lg:my-10 grid">
           <h2 className="text-xl lg:text-2xl font-bold">
             Loket bus terdekat dengan kamu!
           </h2>
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         {/* Info promo voucher */}
-        <div className="p-6 lg:px-20 lg:py-10 flex flex-col lg:flex-row lg:items-center">
+        <div className="m-6 lg:mx-20 lg:my-10 flex flex-col lg:flex-row lg:items-center">
           <div className="lg:basis-1/3">
             <h2 className="text-xl lg:text-2xl font-bold max-w-sm whitespace-pre-line">
               Ada kupon promo nih, cuma untuk kamu loh!
@@ -120,7 +120,7 @@ export default function Home() {
         {/* Bagian */}
         <div className="bg-sky-800">
           {/* CTA */}
-          <div className="p-6 lg:px-20 lg:py-10 grid">
+          <div className="m-6 lg:mx-20 lg:my-10 grid">
             <div className="max-w-sm justify-self-center text-center">
               <h2 className="text-xl lg:text-2xl font-bold text-white">
                 Dapatkan banyak promo yang menarik dari kami!
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           {/* Keunggulan */}
-          <div className="p-6 lg:px-20 lg:py-10 grid">
+          <div className="m-6 lg:mx-20 lg:my-10 grid">
             <div className="justify-self-center text-center">
               <h2 className="text-xl lg:text-2xl font-bold text-white">
                 Keuntungan bergabung dengan kami!

@@ -14,7 +14,7 @@ export default class Bantuan extends Component {
       <>
         <section>
           <div className="bg-halamantiket h-60 w-screen bg-center" />
-          <div className="p-6 lg:px-40 lg:py-10 flex flex-col lg:flex-row lg:items-center">
+          <div className="m-6 lg:mx-20 lg:my-10 flex flex-col lg:flex-row lg:items-center">
             <div className="lg:basis-1/3">
               <h2 className="text-xl lg:text-2xl font-bold max-w-sm whitespace-pre-line">
                 Butuh bantuan?

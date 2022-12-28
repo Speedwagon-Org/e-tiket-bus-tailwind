@@ -13,7 +13,7 @@ const AdvanceSearch = () => {
   };
 
   return (
-    <div className="lg:px-20 p-6 grid place-items-center -mt-52 lg:-mt-40">
+    <div className="lg:mx-20 m-6 grid place-items-center -mt-52 lg:-mt-40">
       <div className="bg-white p-6 rounded-lg shadow-lg border-1">
         <h2 className="font-semibold text-lg lg:text-left text-center">
           Temukan tiket bus murah hanya di Buzz!
