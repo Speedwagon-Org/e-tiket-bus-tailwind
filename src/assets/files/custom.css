@@ -24,14 +24,14 @@
     @apply block rounded-md bg-sky-800 px-4 py-2 text-sm font-medium text-white;
   }
   .menu-inactive {
-    @apply block rounded-md px-2 py-2 text-sm font-medium text-stone-900 hover:bg-sky-300;
+    @apply block rounded-md px-4 py-2 text-sm font-medium text-stone-900 hover:bg-sky-200;
   }
   .menu-m-active {
     @apply block rounded-md bg-sky-800 px-4 py-2 text-sm font-medium text-white;
   }
 
   .menu-m-inactive {
-    @apply block rounded-md px-2 py-2 text-sm font-medium text-stone-900 hover:bg-sky-300;
+    @apply block rounded-md px-4 py-2 text-sm font-medium text-stone-900 hover:bg-sky-300;
   }
   .absolute-center {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform;
