@@ -11,6 +11,7 @@ import {
 
 /* import components */
 import AdvanceSearch from "../../components/AdvanceSearch";
+import SidebarFilter from "../../components/SidebarFilter";
 
 /* import data */
 import { listkeberangkatan } from "../../data/listkeberangkatan";
@@ -28,7 +29,9 @@ class PesanTiket extends Component {
           <div className="bg-halamantiket h-60 w-screen bg-center"></div>
           <AdvanceSearch />
           <div className="grid grid-cols-1 lg:grid-cols-3 p-6 lg:px-48 py-10">
-            <div className="">Sidebar</div>
+            <div className="">
+              <SidebarFilter />
+            </div>
             <div className="col-span-2">
               <div className="flex justify-between items-center">
                 <p>Temukan tiket anda untuk pergi ke Pulau Samosir</p>
@@ -41,7 +44,7 @@ class PesanTiket extends Component {
                   <div className="border rounded-lg my-4">
                     <div className="flex flex-col lg:flex-row">
                       <img
-                        className="object-cover h-full rounded-t-lg lg:rounded-l-lg basis-1/4"
+                        className="object-cover h-full lg:rounded-l-lg basis-1/4"
                         src={item.imgsrc}
                         alt=""
                       />
@@ -129,45 +132,6 @@ class PesanTiket extends Component {
                   </div>
                 ))}
               </div>
-
-              {/* <div>
-                {listkeberangkatan.map((item) => (
-                  <Card
-                    horizontal={true}
-                    imgSrc={item.imgsrc}
-                    className="max-w-xl"
-                  >
-                    <h5 className="text-2xl font-bold tracking-tight">
-                      {item.namabus}
-                    </h5>
-                    <div className="grid grid-cols-2 justify-items-stretch">
-                      <div className="flex items-center">
-                        <div>
-                          <h4 className="text-xl font-semibold">
-                            {item.jamberangkat}
-                          </h4>
-                          <p>{item.lokasiawal}</p>
-                        </div>
-                        <div>
-                          <ArrowLongRightIcon className="h-8 w-8 mx-4" />
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-semibold">
-                            {item.jamsampai}
-                          </h4>
-                          <p>{item.tujuan}</p>
-                        </div>
-                      </div>
-                      <div className="justify-self-end">
-                        <h4 className="text-xl font-bold">
-                          IDR {item.hargatiket}
-                          <span className="text-xs font-normal">/tiket</span>
-                        </h4>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div> */}
             </div>
           </div>
         </section>
