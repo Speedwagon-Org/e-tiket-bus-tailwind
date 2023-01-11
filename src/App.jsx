@@ -52,7 +52,7 @@ function App() {
                         <NavLink to="/">
                           <img
                             className="h-10"
-                            src={require("./assets/images/logo.png")}
+                            src={require("./assets/images/logo-header.png")}
                             alt="Buzz"
                           />
                         </NavLink>
