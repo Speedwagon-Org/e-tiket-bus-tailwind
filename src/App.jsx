@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Router>
         <footer className="lg:py-10 shadow bg-sky-800 lg:px-20 p-6">
           <div className="lg:grid lg:grid-cols-4">
