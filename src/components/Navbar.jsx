@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Home from "../user/pages/Home";
 import PesanTiket from "../user/pages/PesanTiket";
 import Bantuan from "../user/pages/Bantuan";
-import Login from "../user/pages/LoginRegis";
+import LoginRegis from "../user/pages/LoginRegis";
 import Blog from "../user/pages/Blog";
 import PageNotFound from "../user/pages/PageNotFound";
 import Dashboard from "../admin/pages/Dashboard";
@@ -20,13 +20,15 @@ import {
 
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Register from "../user/pages/components/Register";
+import Login from "../user/pages/components/Login";
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "Pesan Tiket", to: "/pesan-tiket" },
   { name: "Bantuan", to: "/bantuan" },
   { name: "Blog", to: "/blog" },
-  { name: "Login", to: "/login" },
+  { name: "Login", to: "/account/login" },
 ];
 
 class Navbar extends Component {
@@ -117,7 +119,10 @@ class Navbar extends Component {
             <Route path="/pesan-tiket" element={<PesanTiket />} />
             <Route path="/bantuan" element={<Bantuan />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/account" element={<LoginRegis />}>
+              <Route path={"register"} element = {<Register/>}/>
+              <Route path={"login"} element = {<Login/>}/>
+            </Route>
             <Route path="*" element={<PageNotFound />} />
             <Route path="admin">
               <Route path="dashboard" element={<Dashboard />} />
