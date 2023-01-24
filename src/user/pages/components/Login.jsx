@@ -14,20 +14,17 @@ export default function login() {
         
 
         {/* Password */}
-        <div>
         <Label>
         Password :
         <TextInput type={'password'} placeholder='********'/> 
         </Label>
         
-        </div>
-        
         
         <div>
-        <Checkbox/>  <Label>Ingat saya</Label>
+         <Checkbox/>  <Label>Ingat saya</Label>
         </div>
         <div className='flex flex-col items-end'>
-          <Button className='w-max items-end'>Log In</Button>
+          <Button className='w-max items-end'>Masuk</Button>
         </div>
       </form>
     </section>

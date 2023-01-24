@@ -18,8 +18,8 @@ export default function LoginRegis() {
       <section>
         {/* Hero */}
         <div className="bg-halamanlogin bg-no-repeat h-60 w-screen bg-cover place-items-center grid mb-96">
-          <div className="shadow-md rounded-lg box-border text-white bg-white p-5 grid place-items-center grid-cols-2 gap-2 text-black mt-24 mx-20">
-            <img src={LogoLoginRegis} alt='LogoLoginRegis' className='h-3/4'></img>
+          <div className="shadow-md rounded-lg box-border text-white bg-white p-10 grid place-items-center grid-cols-2 gap-2 text-black mt-20 mx-20">
+            <img src={LogoLoginRegis} alt='LogoLoginRegis' className='h-72'></img>
             <div className='grid place-items-center w-full h-full px-10'>
               {checkLoaction(useLocation().pathname.split('/').at(-1))}
               <div className='w-full'>
