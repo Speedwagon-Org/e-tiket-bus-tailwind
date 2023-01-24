@@ -1,26 +1,35 @@
-import { Button, Label, TextInput } from 'flowbite-react'
+import { Button, Checkbox, Label, TextInput } from 'flowbite-react'
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 
 export default function login() {
   return (
     <section>
-      <form className='text-black'>
+      <form className='text-black flex flex-col gap-4'>
         {/* Email */}
         <Label>
         Email :
+        <TextInput type={'email'} placeholder='example@ex.com'/>
         </Label>
-        <TextInput type={'email'}/>
+        
 
         {/* Password */}
+        <div>
         <Label>
         Password :
+        <TextInput type={'password'} placeholder='********'/> 
         </Label>
-        <TextInput type={'password'}/>
-        <Button>Log In</Button>
+        
+        </div>
+        
+        
+        <div>
+        <Checkbox/>  <Label>Ingat saya</Label>
+        </div>
+        <div className='flex flex-col items-end'>
+          <Button className='w-max items-end'>Log In</Button>
+        </div>
       </form>
-      
-      Belum memiliki akun? <Link className='text-blue-700' to={'../register'}>aa</Link> sekarang
     </section>
   )
 }
