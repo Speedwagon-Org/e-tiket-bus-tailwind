@@ -122,6 +122,7 @@ class Navbar extends Component {
             <Route path="/account" element={<LoginRegis />}>
               <Route path={"register"} element = {<Register/>}/>
               <Route path={"login"} element = {<Login/>}/>
+              <Route path={":id"} element = {<Login/>}/>
             </Route>
             <Route path="*" element={<PageNotFound />} />
             <Route path="admin">
