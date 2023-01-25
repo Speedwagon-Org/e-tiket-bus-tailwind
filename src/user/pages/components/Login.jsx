@@ -9,7 +9,7 @@ export default function login() {
         {/* Email */}
         <Label>
         Email :
-        <TextInput type={'email'} placeholder='example@ex.com'/>
+        <TextInput type={'email'} placeholder='GilbertCahaya@syukur.com'/>
         </Label>
         
 
