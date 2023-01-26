@@ -22,6 +22,7 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Register from "../user/pages/components/Register";
 import Login from "../user/pages/components/Login";
+import Profile from "../user/pages/Profile";
 
 const navigation = [
   { name: "Home", to: "/" },
@@ -122,9 +123,9 @@ class Navbar extends Component {
             <Route path="/account" element={<LoginRegis />}>
               <Route path={"register"} element = {<Register/>}/>
               <Route path={"login"} element = {<Login/>}/>
-              <Route path={":id"} element = {<Login/>}/>
             </Route>
             <Route path="*" element={<PageNotFound />} />
+            <Route path="/profile" element={<Profile/>}/>
             <Route path="admin">
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="bus" element={<Bus />} />
