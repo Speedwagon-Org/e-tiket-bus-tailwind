@@ -14,7 +14,8 @@ module.exports = {
         hero: "url('/src/assets/images/n01.jpg')",
         halamantiket: "url('/src/assets/images/header-halaman-tiket.jpg')",
         voc: "url('/src/assets/images/bg-voc.jpg')",
-        halamanlogin:"url('/src/assets/images/header-halaman-userauth.png')"
+        halamanlogin:"url('/src/assets/images/header-halaman-userauth.png')",
+        halamanprofile:"url('/src/assets/images/header-halaman-profile.jpg')"
       },
     },
   },
