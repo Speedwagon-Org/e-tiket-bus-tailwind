@@ -51,6 +51,11 @@ export default function Profile() {
                 {/* NOTE CONTAIENR */}
                 <div className='text-red-600'>AAA</div>
                 <div className='text-green-600'>AAA</div>
+
+                {/* COUNPON CONTAINER */}
+                <div>
+                  *COUPON COMPONENT* (TBA)
+                </div>
               </div>
               <div className='flex flex-col gap-1 w-full'>
                 <Link className={buttonStyle} to={'/bantuan'}>BANTUAN</Link>
