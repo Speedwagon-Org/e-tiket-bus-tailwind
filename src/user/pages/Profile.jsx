@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import {CgProfile} from 'react-icons/cg'
-import { Button } from 'flowbite-react'
 export default function Profile() {
+  const buttonStyle = 'bg-white text-black p-2 rounded-lg text-center w-full hover:bg-gray-200'
   const userData = {
     PersonalBiodata:{
       Nama : "Gareng Susilo",
@@ -33,12 +33,28 @@ export default function Profile() {
               <div className='text-white'>
                 <CgProfile size={100}/>
               </div>
-              <div className='bg-white rounded-lg p-5 m-5'>
-                <div className='font-bold'>{userData.PersonalBiodata.Nama}</div>
+              <div className='bg-white rounded-lg p-5 m-5 w-full '>
+                {/* NAME CONTAINER */}
+                <div className='font-bold text-center border-b-2 border-black text-xl'>
+                  {userData.PersonalBiodata.Nama}
+                </div>
+                {/* POINT CONTAINER */}
+                <div className='flex justify-between '>
+                  <div>
+                    <img src="../../assets/images/logo-header.png" alt='logo'/>points
+                  </div>
+                  <div className='font-bold'>
+                    {userData.BuzzPoint}zz
+                  </div>
+                </div>
+                
+                {/* NOTE CONTAIENR */}
+                <div className='text-red-600'>AAA</div>
+                <div className='text-green-600'>AAA</div>
               </div>
-              <div className='flex flex-col gap-1 size'>
-                <Button className='text-white bg-white'>Bantuan</Button>
-                <Button>Keluar</Button>
+              <div className='flex flex-col gap-1 w-full'>
+                <Link className={buttonStyle} to={'/bantuan'}>BANTUAN</Link>
+                <Link className={buttonStyle} to={'/account/login'}>KELUAR</Link>
               </div>
             </div>
 
