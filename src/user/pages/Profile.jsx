@@ -25,10 +25,10 @@ export default function Profile() {
   }
   return (
     <>
-      <section>
+      <section className="bg-halamanprofile py-10 bg-cover bg-no-repeat">
         {/* Hero */}
         {/* <div className="bg-halamanprofile bg-center bg-no-repeat h-60 w-screen bg-cover absolute"/> */}
-        <div className='place-items-center grid mb-5 mt-10'>
+        <div className='place-items-center grid'>
           <div className='bg-white shadow-md rounded-lg flex flex-row'>
             {/* LEFT SIDE */}
             <div className='bg-sky-600 rounded-l-lg p-5 flex flex-col items-center'>
