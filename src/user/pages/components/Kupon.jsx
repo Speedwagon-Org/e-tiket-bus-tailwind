@@ -90,7 +90,6 @@ export default function Kupon() {
         {/* Coupon */}
         {ownedCOupon()}
       </div>
-      
     </div>
   )
 }
