@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import {CgProfile} from 'react-icons/cg'
-import Coupon from './components/Coupon'
+import Coupon from './components/CouponTemplate'
 export default function Profile() {
   const buttonStyle = 'bg-white text-black p-2 rounded-lg text-center w-full hover:bg-gray-200'
   const userData = {
@@ -60,7 +60,7 @@ export default function Profile() {
                  <div className='text-md'>
                    Ayo tukarkan 750zz dengan kupon!
                    <br/>
-                   <Coupon couponCode='AFB331' couponDiscount={50}></Coupon>
+                   <Coupon couponCode='AFB331' couponDiscount={50} dayLeft={50}></Coupon>
                  </div>
                </div>
               <div className='flex flex-col gap-1 w-full'>
@@ -69,7 +69,7 @@ export default function Profile() {
               </div>
            </div>
            {/* RIGHT SIDE */}
-           <div className='p-5'>
+           <div className='p-5 border-black w-max '>
              {/* NAV BAR */}
              <div className='flex flex-row gap-10 m-10 text-xl'>
                <Link to={"biodata"}>Biodata</Link>
