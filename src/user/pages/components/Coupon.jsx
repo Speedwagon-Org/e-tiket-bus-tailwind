@@ -6,9 +6,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Coupon({couponDiscount = 0, couponCode = '######'}) {
-  const notifyTextCopied = () => {
-    toast("Kupon telah disalin!")
-  };
+
+  const copyTextToClipboard = () => {
+    try {
+      navigator.clipboard.writeText(couponCode)
+      toast("Kupon telah disalin!")
+    } catch  {
+      toast("Terjadi kesalahan!")
+    }
+    
+  }
   return (
     <div className='bg-white border-2 border-slate-500 rounded-lg border-black p-2 w-fit m-4'>
       <div>
@@ -19,7 +26,7 @@ export default function Coupon({couponDiscount = 0, couponCode = '######'}) {
         <Link to={'/blog'}>s&k berlaku</Link>
       </div>
       
-      <div onClick={notifyTextCopied} className='text-2xl font-bold mt-5 flex flex-ro hover:cursor-pointer'>{couponCode} <MdOutlineContentCopy className='ml-2'/></div>
+      <div onClick={copyTextToClipboard} className='text-2xl font-bold mt-5 flex flex-ro hover:cursor-pointer'>{couponCode} <MdOutlineContentCopy className='ml-2'/></div>
       <ToastContainer/>
     </div>
   )
