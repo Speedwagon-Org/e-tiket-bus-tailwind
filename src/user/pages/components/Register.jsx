@@ -28,10 +28,10 @@ export default function register() {
           <TextInput type={'password'} placeholder='********'/> 
         </Label>
         <div>
-          <Checkbox/>  <Label>Saya menyetujui seluruh <Link>S&K</Link> yang telah berlaku</Label>
+          <Checkbox/>  <Label>Saya menyetujui seluruh <Link className='text-blue-400'>S&K</Link> yang telah berlaku</Label>
         </div>
         <div className='flex flex-col items-end'>
-          <Button className='w-max items-end'>Daftar!</Button>
+        <Link to={'/profile/biodata'}><Button className='w-max items-end'> Masuk</Button> </Link>
         </div>
       </form>
     </section>

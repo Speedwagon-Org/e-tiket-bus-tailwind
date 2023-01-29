@@ -1,4 +1,5 @@
 import { Button, Checkbox, Label, TextInput } from 'flowbite-react'
+import { Link } from 'react-router-dom'
 import React from 'react'
 
 
@@ -24,7 +25,7 @@ export default function login() {
          <Checkbox/>  <Label>Ingat saya</Label>
         </div>
         <div className='flex flex-col items-end'>
-          <Button className='w-max items-end'>Masuk</Button>
+        <Link to={'/profile/biodata'}><Button className='w-max items-end'> Masuk</Button> </Link>
         </div>
       </form>
     </section>
