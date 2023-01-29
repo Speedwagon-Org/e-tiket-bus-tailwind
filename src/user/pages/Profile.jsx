@@ -58,9 +58,9 @@ export default function Profile() {
                  </div>
                  {/* COUNPON CONTAINER */}
                  <div className='text-md'>
-                   Ayo tukarkan 750zz dengan kupon
+                   Ayo tukarkan 750zz dengan kupon!
                    <br/>
-                   <Coupon></Coupon>
+                   <Coupon couponCode='AFB331' couponDiscount={50}></Coupon>
                  </div>
                </div>
               <div className='flex flex-col gap-1 w-full'>

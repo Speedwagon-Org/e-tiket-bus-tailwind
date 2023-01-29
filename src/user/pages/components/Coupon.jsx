@@ -26,7 +26,7 @@ export default function Coupon({couponDiscount = 0, couponCode = '######'}) {
         <Link to={'/blog'}>s&k berlaku</Link>
       </div>
       
-      <div onClick={copyTextToClipboard} className='text-2xl font-bold mt-5 flex flex-ro hover:cursor-pointer'>{couponCode} <MdOutlineContentCopy className='ml-2'/></div>
+      <div onClick={copyTextToClipboard} className='text-2xl font-bold mt-5 flex hover:cursor-pointer'>#{couponCode} <MdOutlineContentCopy size={18} className='ml-2'/></div>
       <ToastContainer/>
     </div>
   )
