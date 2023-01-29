@@ -27,11 +27,11 @@ export default function Profile() {
     <>
       <section>
         {/* Hero */}
-        <div className="bg-halamanprofile bg-center bg-no-repeat h-60 w-screen bg-cover"/>
-        <div className='place-items-center grid mb-5'>
+        {/* <div className="bg-halamanprofile bg-center bg-no-repeat h-60 w-screen bg-cover absolute"/> */}
+        <div className='place-items-center grid mb-5 mt-10'>
           <div className='bg-white shadow-md rounded-lg flex flex-row'>
             {/* LEFT SIDE */}
-            <div className='bg-blue-500 rounded-l-lg p-5 flex flex-col items-center'>
+            <div className='bg-sky-600 rounded-l-lg p-5 flex flex-col items-center'>
                <div className='text-white'>
                  <CgProfile size={100}/>
                </div>
